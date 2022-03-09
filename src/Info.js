@@ -8,8 +8,7 @@ const Info = () => {
   //name,nickname 입력 시 console.log에 실시간으로 렌더링되었다고 표시된다.
   useEffect(() => {
     console.log("렌더링이 완료되었습니다.");
-    console.log({name, nickname});
-  });
+  }, []);
 
   const onChangeName = e => {
     setName(e.target.value); //e.target.value는 인풋태그에 입력되는 값
